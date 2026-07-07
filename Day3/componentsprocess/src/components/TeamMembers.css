@@ -1,0 +1,32 @@
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.team-card {
+  width: 200px;
+  text-align: center;
+}
+
+.team-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-card img:hover {
+  transform: scale(1.1);
+}
+
+.team-card h3 {
+  margin-top: 10px;
+}
+
+.team-card p {
+  color: gray;
+}
