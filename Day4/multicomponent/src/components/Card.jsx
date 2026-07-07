@@ -1,5 +1,5 @@
 import forest from "../assets/forest.jpg";
-const Card = () => {
+export const Card = () => {
   return (
     <>
       <div className="flex gap-5 justify-center bg-purple-300 p-4">
@@ -50,4 +50,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+
