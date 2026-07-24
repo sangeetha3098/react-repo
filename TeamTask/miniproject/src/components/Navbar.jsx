@@ -14,7 +14,7 @@ export const Navbar = () => {
   if (!currentUser) return null;
 
   return (
-    <nav className="sticky top-0 z-50 glass-panel border-b border-white/5 py-4 px-6 md:px-12 flex justify-between items-center transition-all duration-300">
+    <nav className="sticky top-0 z-50 glass-panel bg-slate-900/80 border-b border-white/5 py-4 px-6 md:px-12 flex justify-between items-center transition-all duration-300">
       <div className="flex items-center space-x-3 cursor-pointer" onClick={() => navigate('/home')}>
         <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-rose-500 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-500/20">
           IN

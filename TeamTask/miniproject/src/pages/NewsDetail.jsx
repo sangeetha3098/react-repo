@@ -20,7 +20,7 @@ export const NewsDetail = () => {
     <div className="min-h-screen bg-gradient-to-br from-indigo-800 to-rose-800 text-white">
       <Navbar />
 
-      <main className="max-w-4xl mx-auto px-6 py-12">
+      <main className="max-w-4xl mx-auto px-6 py-12 pt-24">
         {/* Back button */}
         <div className="mb-8">
           <button

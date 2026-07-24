@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './pages/Login';
 import Home from './pages/Home';
 import NewsDetail from './pages/NewsDetail';
+import Register from './pages/Register';
 
 // Hook & Route protection: Checks session to shield routes
 const ProtectedRoute = ({ children }) => {
@@ -36,6 +37,8 @@ const App = () => {
             </ProtectedRoute>
           } 
         />
+
+        <Route path="/register" element={<Register />} />
 
         {/* Fallback route */}
         <Route path="*" element={<Navigate to="/home" replace />} />
