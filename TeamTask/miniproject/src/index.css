@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@layer base {
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+}
+
+body {
+  background-color: #0f172a; /* Slate 900 - professional dark gray, not black */
+  color: #f1f5f9; /* Slate 100 */
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Simple Card & Panel Styling (No gradients) */
+.simple-card {
+  background-color: #1e293b; /* Slate 800 */
+  border: 1px solid #334155; /* Slate 700 */
+  border-radius: 12px;
+}
+
+.simple-card-hover:hover {
+  border-color: #4f46e5; /* Indigo 600 */
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+}
